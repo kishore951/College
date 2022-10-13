@@ -8,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class SearchemployeeComponent implements OnInit {
 
   constructor() { }
+  admissionNo=""
 
+  readValues=()=>{
+    let data ={
+      "admissionNo":this.admissionNo
+    }
+    console.log(data)
+  }
+    
   ngOnInit(): void {
   }
 
