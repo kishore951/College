@@ -6,47 +6,47 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
                     <label for="Name" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="Name" [(ngModel)]="Name">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
                     <label for="Roll.No" class="form-label">Roll.No</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="rollNo" [(ngModel)]="rollNo">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
                     <label for="College" class="form-label">College</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="college" [(ngModel)]="college">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
                     <label for="Admission No" class="form-label">Admission No</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="admissionNo" [(ngModel)]="admissionNo">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
                     <label for="Parent's Name" class="form-label">Parent's Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="parrentsName" [(ngModel)]="parrentsName">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
                     <label for="D.O.B" class="form-label">D.O.B</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input type="date" name="dob" id="" class="form-control" [(ngModel)]="dob">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="Address" class="form-label">Address</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="address" id="" cols="30" rows="10" class="form-control" [(ngModel)]="address"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
                     <label for="Mobile No" class="form-label">Mobile No</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name=" mobileNo" [(ngModel)]=" mobileNo">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
                     <label for="Parent's Mob No" class="form-label">Parent's Mob No</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="parrentsMobileNo" [(ngModel)]="parrentsMobileNo">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
                     <label for="Email Id" class="form-label">Email Id</label>
-                    <input type="email" class="form-control">
+                    <input type="email" class="form-control" name="emailId" [(ngModel)]="emailId">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
                     <label for="Blood Group" class="form-label">Blood Group</label>
-                    <select name="" id="" class="form-control">
+                    <select name="bloodGroup" id="" class="form-control" [(ngModel)]="bloodGroup">
                         <option value="A+">A+</option>
                         <option value="B+">B+</option>
                         <option value="O+">O+</option>
@@ -57,7 +57,7 @@
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"></div>
-                <button class="btn btn-success">Submit</button>
+                <button class="btn btn-success" (click)="readValues()">Submit</button>
             </div>
 
 
